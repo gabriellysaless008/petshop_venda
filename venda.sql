@@ -52,20 +52,33 @@ create table estoque (
     );
 
 create table remedio (
-venda varchar(255),
-estoque varchar (255),
-id int primary key auto_increment,
-consumivel_id int (11)
+	venda varchar(255),
+	estoque varchar (255),
+	id int primary key auto_increment,
+	consumivel_id int (11)
 );
 
 create table pet( 
-nome varchar(255),
-idade int(11),
-raca varchar(255),
-porte varchar(255),
-sexo varchar(255),
-responsavel varchar(255),
-id int(11) primary key auto_increment,
-perfil_id int(11)
+	nome varchar(255),
+	idade int(11),
+	raca varchar(255),
+	porte varchar(255),
+	sexo varchar(255),
+	responsavel varchar(255),
+	id int(11) primary key auto_increment,
+	perfil_id int(11)
+);
+
+create table catalogo(
+	item varchar(255),
+	descricao varchar(255),
+	id int(11) primary key auto_increment
+);
+
+create table consumivel(
+	venda varchar(255),
+	estoque varchar(255),
+	id int(11) primary key auto_increment,
+	estoque_id int(11)
 );
 
