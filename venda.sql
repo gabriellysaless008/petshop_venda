@@ -82,3 +82,9 @@ create table consumivel(
 	estoque_id int(11)
 );
 
+create table estetica(
+	venda varchar(255),
+    agenda varchar(255),
+    id int(11) primary key auto_increment
+);
+
