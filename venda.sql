@@ -9,13 +9,13 @@ create table venda(
     data_compra date,
     forma_pagamento varchar(255),
     estado varchar(255),
-    id int(11)
+    id int(11) primary key auto_increment
 );
 
 create table login(
 	user varchar(255),
 	passaword varchar(255),
-	id int(11),
+	id int(11) primary key auto_increment,
 	login_id int(11),
 	responsavel_id int(11)
 );
@@ -25,7 +25,7 @@ create table agenda(
 	horainicio varchar(255),
     horafim varchar(255),
     disponivel varchar(255),
-    id int(11)
+    id int(11) primary key auto_increment
 );
 
 create table loja(
@@ -34,14 +34,14 @@ create table loja(
 	telefone int(11),
 	cnpj varchar(255),
 	endereco varchar(255),
-	id int(11),
-	pet_id int(11),
+	id int(11) primary key auto_increment,
+	pet_id int(11) primary key auto_increment,
 	catalogo_id int(11)
 );
 
 create table perfil(
 	fotoUrl varchar(255),
-	id int(11)
+	id int(11) primary key auto_increment
 );
 
 create table estoque ( 
@@ -65,7 +65,7 @@ raca varchar(255),
 porte varchar(255),
 sexo varchar(255),
 responsavel varchar(255),
-id int(11),
-perfil_id int(11)
+id int(11) primary key auto_increment,
+perfil_id int(11) primary key auto_increment
 );
 
