@@ -35,7 +35,7 @@ create table loja(
 	cnpj varchar(255),
 	endereco varchar(255),
 	id int(11) primary key auto_increment,
-	pet_id int(11) primary key auto_increment,
+	pet_id int(11),
 	catalogo_id int(11)
 );
 
@@ -66,6 +66,6 @@ porte varchar(255),
 sexo varchar(255),
 responsavel varchar(255),
 id int(11) primary key auto_increment,
-perfil_id int(11) primary key auto_increment
+perfil_id int(11)
 );
 
